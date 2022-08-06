@@ -1,0 +1,46 @@
+{% extends "base.html" %}
+{% block title %}Login page{% endblock %}
+{% block content %}
+{% with messages = get_flashed_messages() %}
+{% if messages %}
+{% for msg in messages %}
+<p>{{msg}}</p>
+{% endfor %}
+{% endif %}
+{% endwith %}
+<div>Add patient's prescription here</div>
+<div class="my-4">
+    <form action="#" method="POST">
+        <div class="row">
+            <div class="col">
+                <label for="patientID">Choose patient</label>
+                <select id="patientID" name="uid">
+                    {% for pat in patient %}
+                    <option value={{pat.id}}>{{pat.name}} Tel:{{pat.phone_num}}</option>
+                    {% endfor %}
+
+                </select>
+            </div>
+            <div class="col">
+                <label for="patientID">Choose pill</label>
+                <select id="pillID" name="pid">
+                    {% for p in pill %}
+                    <option value={{p.id}}>{{p.name}}</option>
+                    {% endfor %}
+
+                </select>
+            </div>
+            <div class="col">
+                <label for="freqency">Frequency:</label>
+                <input type="text" id="pfrequency" name="frequency">
+            </div>
+
+            <div class="col">
+                <label for="quan">Quantity:</label>
+                <input type="text" id="pquan" name="quan">
+            </div>
+        </div>
+        <button type="submit" class="btn btn-danger my-4 mx-3">Submit</button>
+    </form>
+</div>
+{% endblock %}

@@ -1,0 +1,47 @@
+{% extends "base.html" %}
+{% block title %}Login page{% endblock %}
+{% block content %}
+<!-- {% with messages = get_flashed_messages() %}
+        {% if messages %}
+            {% for msg in messages %}
+                <p>{{msg}}</p>
+            {% endfor %}
+        {% endif %}
+    {% endwith %} -->
+<div>
+    Here is admin page. Add new pill with the below form.
+</div>
+<div>
+    <form action="#" method="POST">
+        <div class="row mx-auto my-auto">
+            <div class="col">
+                <label for="pillname">Pill's name:</label>
+                <input type="text" id="pillname" name="name">
+            </div>
+            <div class="col"><label for="pillcolor">Pill's color:</label>
+                <input type="text" id="pillcolor" name="color">
+            </div>
+            <div class="col"><label for="pillshape">Pill's shape:</label>
+                <div>
+                    <select id="pillshape" name="shape">
+                        <option value="Square">Square</option>
+                        <option value="Circle">Circle</option>
+                        <option value="Rectangle">Rectangle</option>
+                        <option value="Triangle">Triangle</option>
+                        <option value="Semi-Circle">Semi-Cirlce</option>
+                    </select>
+                </div>
+
+            </div>
+            <div class="col"><label for="pillwidth">Pill's width (in inch):</label>
+                <input type="text" id="pillwidth" name="width" pattern="[0-9]+([.,][0-9]+)?" step="0.01">
+            </div>
+            <div class="col"><label for="pillheight">Pill's Height (in inch):</label>
+                <input type="text" id="pillheight" name="height" pattern="[0-9]+([.,][0-9]+)?" step="0.01">
+            </div>
+        </div>
+        <button type="submit" class="btn btn-danger my-4 mx-3">Submit</button>
+
+    </form>
+</div>
+{% endblock %}

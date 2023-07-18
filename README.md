@@ -17,6 +17,18 @@ The web server is used ngrok service to direct the public link to my laptop's pr
 6. SQLite
 7. Ngrok
 
+## Demo
+![Screenshot_20220420-231618](https://github.com/Vincy-Cheng/IEFYP/assets/60846680/374e3ad8-4f5f-4ae0-8898-e5fbdd74e653)
+
+![Screenshot_20220421-143825](https://github.com/Vincy-Cheng/IEFYP/assets/60846680/d2c5ce4a-b48e-4d72-934d-f76cedc12ce4)
+
+![Screenshot_20220420-232934](https://github.com/Vincy-Cheng/IEFYP/assets/60846680/808d76ee-01e6-4dfb-81b7-6f4ec18e3095)
+
+![Screenshot_20220421-152147](https://github.com/Vincy-Cheng/IEFYP/assets/60846680/c89eb7ec-e62e-484a-a48c-4d5e9040cc8c)
+
+![webportal_admin](https://github.com/Vincy-Cheng/IEFYP/assets/60846680/c9eb4598-5997-4e56-9608-152c4ab789fe)
+
+
 ## Remarks
 
 **Note** The code of frontend(app) and backend(Python server) are not compilable anymore. 
